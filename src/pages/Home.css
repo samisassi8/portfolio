@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Raleway:wght@600&display=swap");
+
+@media (prefers-color-scheme: light) {
+  button {
+    background-color: #03224c; /* Couleur de fond en mode clair */
+    color: rgb(15, 13, 13); /* Couleur du texte en mode clair */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    background-color: #03224c; /* Couleur de fond en mode sombre */
+    color: white; /* Couleur du texte en mode sombre */
+  }
+}
+
+.Home_container {
+  text-align: center;
+  display: flex;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("../assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  height: 50px;
+  margin-top: 15px;
+  background-color: #03224c;
+}
+
+.info {
+  width: 30%;
+}
+
+h1 {
+  font-family: 52px/1.1 "Raleway", sans-serif;
+  padding: 15px;
+}
+
+h2 {
+  font-family: poppins;
+  padding: 0.9375em;
+}

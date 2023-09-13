@@ -1,0 +1,74 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem;
+  /* background-color: rgb(226 232 240); */
+}
+
+/* logo */
+.logo {
+  width: 20%;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  /* background-color: rgb(226 232 240); */
+  padding-bottom: 5px;
+  display: none;
+}
+
+.menu.flex {
+  display: flex;
+}
+
+/* Menu Items */
+.menu-item {
+  display: inline-block;
+  padding: 2px 16px;
+  margin: 0 8px;
+  font-size: 1.25rem;
+}
+
+/* Toggle Button */
+.toggle-button {
+  margin-left: auto;
+  display: none;
+}
+
+/* Button Icon */
+.button-icon {
+  width: 1rem;
+}
+
+/* Show/Hide Menu Styles */
+.toggle-button .button-icon[src*="close"] {
+  display: block;
+}
+
+.toggle-button .button-icon[src*="hamburger"] {
+  display: none;
+}
+
+.menu.flex {
+  display: flex;
+}
+
+.menu.hidden {
+  display: none;
+}
+
+.menu.flex {
+  display: flex;
+}
