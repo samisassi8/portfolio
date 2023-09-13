@@ -2,19 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Raleway:wght@600&display=swap");
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   button {
-    background-color: #03224c; /* Couleur de fond en mode clair */
-    color: rgb(15, 13, 13); /* Couleur du texte en mode clair */
+    background-color: #03224c;
+    color: rgb(15, 13, 13);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   button {
-    background-color: #03224c; /* Couleur de fond en mode sombre */
-    color: white; /* Couleur du texte en mode sombre */
+    background-color: #03224c;
+    color: white;
   }
-}
+} */
 
 .Home_container {
   text-align: center;
@@ -37,11 +37,11 @@
   height: 100vh;
 }
 
-button {
+/* button {
   height: 50px;
   margin-top: 15px;
   background-color: #03224c;
-}
+} */
 
 .info {
   width: 30%;
@@ -55,4 +55,41 @@ h1 {
 h2 {
   font-family: poppins;
   padding: 0.9375em;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 330%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
 }
