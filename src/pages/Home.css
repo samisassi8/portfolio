@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300;400&family=Raleway:wght@600&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Raleway:wght@600&display=swap");
 
@@ -48,13 +48,15 @@
 }
 
 h1 {
-  font-family: 52px/1.1 "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 15px;
+  font-weight: 600;
 }
 
 h2 {
-  font-family: poppins;
+  font-family: "poppins", sans-serif;
   padding: 0.9375em;
+  font-weight: 400;
 }
 
 button {
@@ -70,6 +72,7 @@ button {
   z-index: 1;
   font-family: inherit;
   color: #17c3b2;
+  text-shadow: 2px 2px 2px rgba(4, 3, 3, 0.46);
 }
 
 button::before {
