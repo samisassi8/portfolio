@@ -10,12 +10,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
+      <li>
+        <Link to="/">
+          <img src={logo} alt="logo link to homepage" className="logo" />
+        </Link>
+      </li>
       <ul className={`menu ${showMenu ? "flex" : "hidden"}`}>
-        <li>
-          <Link to="/">
-            <img src={logo} alt="logo link to homepage" className="logo" />
-          </Link>
-        </li>
         <li>
           <Link to="/" className="menu-item" href="#">
             Accueil
@@ -45,8 +45,8 @@ export default function Navbar() {
       <button onClick={() => setShowMenu(!showMenu)} className="toggle-button">
         <img
           className="button-icon"
-          src={showMenu ? close : hamburger}
-          alt={showMenu ? "cacher le menu" : "Montrer le menu"}
+          src={showMenu ? hamburger : close}
+          alt={showMenu ? "hide menu" : "show menu"}
         />
       </button>
     </nav>

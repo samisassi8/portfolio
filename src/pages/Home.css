@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Raleway:wght@600&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;600&family=Poppins:wght@300;400&family=Raleway:wght@600&display=swap");
+
 /* @media (prefers-color-scheme: light) {
   button {
     background-color: #03224c;
@@ -19,88 +21,47 @@
 .Home_container {
   text-align: center;
   display: flex;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.35)
-    ),
-    url("../assets/background.jpeg");
-  background-size: cover;
+  /* background-size: auto; */
+  /* background-size: 1920px 1300px; */
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
-  flex-direction: column;
-  justify-content: space-around;
+  background-image: url("../assets/background.jpeg");
+  /* background-size: contain; */
+  object-position: 10% 50%;
+  vertical-align: middle;
+  object-fit: contain;
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
   align-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
 
-/* button {
-  height: 50px;
-  margin-top: 15px;
-  background-color: #03224c;
-} */
-
 .info {
   width: 30%;
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 3.2em;
+  font-family: "Open Sans", sans-serif;
   padding: 15px;
   font-weight: 600;
 }
 
 h2 {
+  color: white;
   font-family: "poppins", sans-serif;
   padding: 0.9375em;
   font-weight: 400;
 }
 
-/* button {
-  padding: 0.8em 1.8em;
-  border: 2px solid #17c3b2;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.3s;
-  z-index: 1;
-  font-family: inherit;
-  color: #17c3b2;
-  text-shadow: 2px 2px 2px rgba(4, 3, 3, 0.46);
-}
-
-button::before {
-  content: "";
-  width: 0;
-  height: 330%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #17c3b2;
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-}
-
-button:hover::before {
-  width: 105%;
-}
-
-button:hover {
-  color: #111;
-} */
 .btn {
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  background: #e3edf7;
+  background: #c9cbcc;
   padding: -1.6em;
   margin: 15px;
   border-radius: 10px;
@@ -127,4 +88,23 @@ button:hover {
 .btn:hover svg {
   transform: scale(0.9);
   fill: #333333;
+}
+
+/* Define breakpoints using media queries */
+@media screen and (max-width: 768px) {
+  .Home_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: none; */
+    /* background-color: rgba(17, 20, 20, 0.5); */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for screens with a width between 601px and 1024px */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Styles for screens with a minimum width of 1025px */
 }
