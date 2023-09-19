@@ -6,7 +6,9 @@ export default function Home() {
       <div className="info">
         <h1>Sami BRAHIM</h1>
         <h2>Développeur web React</h2>
-        <button className="btn">QUI SUIS-JE ?</button>
+        <a href="/Profil">
+          <button className="btn">QUI SUIS-JE ?</button>
+        </a>
       </div>
     </div>
   );

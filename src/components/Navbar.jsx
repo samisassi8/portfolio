@@ -6,7 +6,11 @@ import logo from "../assets/logo.svg";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
 
   return (
     <nav className="navbar">
@@ -17,27 +21,47 @@ export default function Navbar() {
       </li>
       <ul className={`menu ${showMenu ? "flex" : "hidden"}`}>
         <li>
-          <Link to="/" className="menu-item" href="#">
+          <Link to="/" className="menu-item" href="#" onClick={closeMenu}>
             Accueil
           </Link>
         </li>
         <li>
-          <Link to="/Profil" className="menu-item" href="Profil">
+          <Link
+            to="/Profil"
+            className="menu-item"
+            href="Profil"
+            onClick={closeMenu}
+          >
             Profil
           </Link>
         </li>
         <li>
-          <Link to="/Competences" className="menu-item" href="Competences">
+          <Link
+            to="/Competences"
+            className="menu-item"
+            href="Competences"
+            onClick={closeMenu}
+          >
             Competences
           </Link>
         </li>
         <li>
-          <Link to="/Portfolio" className="menu-item" href="Portfolio">
+          <Link
+            to="/Portfolio"
+            className="menu-item"
+            href="Portfolio"
+            onClick={closeMenu}
+          >
             Portfolio
           </Link>
         </li>
         <li>
-          <Link to="/Contact" className="menu-item" href="Contact">
+          <Link
+            to="/Contact"
+            className="menu-item"
+            href="Contact"
+            onClick={closeMenu}
+          >
             Contact
           </Link>
         </li>
@@ -45,7 +69,7 @@ export default function Navbar() {
       <button onClick={() => setShowMenu(!showMenu)} className="toggle-button">
         <img
           className="button-icon"
-          src={showMenu ? hamburger : close}
+          src={showMenu ? close : hamburger}
           alt={showMenu ? "hide menu" : "show menu"}
         />
       </button>

@@ -4,8 +4,8 @@ import profil from "../assets/profil.jpg";
 export default function Profil() {
   return (
     <>
-      <div className="text_container">
-        <h2>A PROPOS DE MOI</h2>
+      <h2>A PROPOS DE MOI</h2>
+      <div className="container">
         <img src={profil} alt="" />
         <div className="description">
           <p>
@@ -15,7 +15,7 @@ export default function Profil() {
           </p>
           <p>
             Après avoir dirigé avec succès des entreprises et supervisé la
-            rénovation de plusieurs propriétés, j`ai entamé une transition de
+            rénovation de plusieurs propriétés, j'ai entamé une transition de
             carrière vers le monde du développement Web.
           </p>
           <p>
