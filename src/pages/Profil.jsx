@@ -1,5 +1,6 @@
 import "./Profil.css";
 import profil from "../assets/profil.jpg";
+import serverImage from "../assets/serveurs.jpg";
 
 export default function Profil() {
   return (
@@ -30,6 +31,13 @@ export default function Profil() {
             continuer à grandir en tant que développeur Web.
           </p>
         </div>
+      </div>
+      <div className="profilContainer">
+        <div className="textImage">
+          <h3>Actuellement</h3>
+          <h4>En recherche de projet</h4>
+        </div>
+        <img src={serverImage} alt="server image" className="serverImage" />
       </div>
     </>
   );

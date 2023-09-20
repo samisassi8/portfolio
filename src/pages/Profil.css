@@ -15,14 +15,48 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 10% auto 0; */
-  /* padding: 0.3em 0.6em; */
 }
 
 .description {
   padding: 2em;
 }
 
+.profilContainer {
+  display: flex;
+  /* max-width: 80%; */
+  height: 30%;
+  margin: 50px auto;
+  height: 500px;
+}
+
+.serverImage {
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+  width: 80vw;
+  max-height: 60%;
+  filter: opacity(85%);
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.textImage {
+  /* display: flex; */
+  /* align-items: center; */
+  color: white;
+  position: absolute;
+  /* left: 50%;
+  top: 55%; */
+  transform: translate(15%, 55%);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.52);
+  text-align: center;
+  text-wrap: balance;
+  filter: opacity(100%);
+  font-size: 1.4em;
+  z-index: 1;
+}
 @media screen and (min-width: 768px) {
   h2 {
     text-align: center;
