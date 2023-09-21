@@ -4,7 +4,7 @@ import serverImage from "../assets/serveurs.jpg";
 
 export default function Profil() {
   return (
-    <>
+    <div className="Profil_container" id="Profil">
       <h2>A PROPOS DE MOI</h2>
       <div className="container">
         <img src={profil} alt="" />
@@ -39,6 +39,6 @@ export default function Profil() {
         </div>
         <img src={serverImage} alt="server image" className="serverImage" />
       </div>
-    </>
+    </div>
   );
 }

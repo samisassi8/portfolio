@@ -1,15 +1,15 @@
 import "./Home.css";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Home() {
   return (
-    <div className="Home_container">
+    <div className="Home_container" id="Home">
       <div className="info">
         <h1 id="homeH1">Sami BRAHIM</h1>
         <h2 id="homeH2">Développeur web React</h2>
-        <a href="#Profil">
+        <Link smooth to="#Profil">
           <button className="btn">QUI SUIS-JE ?</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

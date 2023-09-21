@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <Profil id="profil" />
-      <Competences />
+      <Competences id="#Competences" />
       <Portfolio />
       <Contact />
       {/* <Routes> */}
