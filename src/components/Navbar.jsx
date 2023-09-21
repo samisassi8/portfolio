@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   const closeMenu = () => {
     setShowMenu(false);
@@ -70,7 +70,7 @@ export default function Navbar() {
         <img
           className="button-icon"
           src={showMenu ? close : hamburger}
-          alt={showMenu ? "hide menu" : "show menu"}
+          alt={showMenu ? "show menu" : "hide menu"}
         />
       </button>
     </nav>

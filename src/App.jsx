@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Navbar />
       <Home />
-      <Profil />
+      <Profil id="profil" />
       <Competences />
       <Portfolio />
       <Contact />

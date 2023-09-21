@@ -4,25 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;600&family=Poppins:wght@300;400&family=Raleway:wght@600&display=swap");
 
-/* @media (prefers-color-scheme: light) {
-  button {
-    background-color: #03224c;
-    color: rgb(15, 13, 13);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  button {
-    background-color: #03224c;
-    color: white;
-  }
-} */
-
 .Home_container {
   text-align: center;
   display: flex;
-  /* background-size: auto; */
-  /* background-size: 1920px 1300px; */
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../assets/background.jpeg");
@@ -31,40 +15,44 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  /* object-position: 10% 50%;
-  vertical-align: middle;
-  object-fit: contain;
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
-  /* align-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;  */
 }
 
 .info {
-  width: 30%;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  color: white;
+#homeH1 {
   font-size: 3.2em;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  /* padding: 15px; */
   margin-bottom: 10px;
 }
 
-h2 {
+#homeH1,
+#homeH2 {
   color: white;
-  font-family: "poppins", sans-serif;
-  /* padding: 0.9375em; */
-  font-weight: 400;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+#homeH2 {
+  margin-top: 10px;
+}
+
+.info:hover #homeH1 {
+  transform: rotateY(360deg);
+}
+
+.info:hover #homeH2 {
+  transform: rotateY(-360deg);
 }
 
 .btn {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   background: #c9cbcc;
@@ -96,14 +84,11 @@ h2 {
   fill: #333333;
 }
 
-/* Define breakpoints using media queries */
 @media screen and (max-width: 768px) {
   .Home_container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: none; */
-    /* background-color: rgba(17, 20, 20, 0.5); */
   }
   .info {
     width: 80%;
