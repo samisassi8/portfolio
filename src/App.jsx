@@ -19,13 +19,6 @@ function App() {
       <Competences id="#Competences" />
       <Portfolio />
       <Contact />
-      {/* <Routes> */}
-      {/* <Route path="/" element={<Home />} /> */}
-      {/* <Route path="/Profil" element={<Profil />} />
-        <Route path="/Competences" element={<Competences />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes> */}
     </Router>
   );
 }

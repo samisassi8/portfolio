@@ -30,7 +30,8 @@ img {
 
 .serverImage {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  max-height: 200px;
   filter: opacity(85%);
 }
 
@@ -56,6 +57,7 @@ img {
   .textImage {
     margin-right: 20px;
     text-align: left;
+    max-height: 300px;
   }
   .profilContainer h2 {
     text-align: center;
