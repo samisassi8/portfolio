@@ -4,10 +4,10 @@ import serverImage from "../assets/serveurs.jpg";
 
 export default function Profil() {
   return (
-    <div className="Profil_container" id="Profil">
+    <div className="profilContainer" id="Profil">
       <h2>A PROPOS DE MOI</h2>
       <div className="container">
-        <img src={profil} alt="" />
+        <img src={profil} alt="" className="profil_picture" />
         <div className="description">
           <p>
             Je suis un développeur Web passionné qui a débuté ma carrière en

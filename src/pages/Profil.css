@@ -2,7 +2,8 @@
   color: red;
 }
 
-h2 {
+.profilContainer h2 {
+  margin: 5%;
   color: black;
 }
 
@@ -48,6 +49,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .profilContainer {
+    width: 100vw;
     flex-direction: row;
     justify-content: center;
   }
@@ -55,17 +57,17 @@ img {
     margin-right: 20px;
     text-align: left;
   }
-  h2 {
+  .profilContainer h2 {
     text-align: center;
     margin: 0.9375em auto 0.5em;
   }
   .container {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
     /* display: flex; */
     flex-direction: row;
     justify-content: space-evenly;
-    width: 80%;
+    /* width: 80%; */
   }
   .container::after {
     content: "";
@@ -80,17 +82,18 @@ img {
     width: 60%;
   }
   .description {
+    text-align: justify;
     width: 100%;
     display: inline-block;
     margin-bottom: 50px;
   }
-  img {
+  .profil_picture {
     width: 40%;
     float: left;
     object-fit: cover;
     shape-outside: margin-box;
     clip-path: ellipse(33% 50%);
-    margin: 0 20px 5px 0;
+    margin: 0 0px 5px 0;
     /* display: inline-block; */
     /* padding: 30px; */
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
