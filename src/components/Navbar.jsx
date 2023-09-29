@@ -9,7 +9,7 @@ import "./Navbar.css";
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(true);
   const [color, setColor] = useState(false);
-  const [showToggleButton, setShowToggleButton] = useState(true);
+  const [showToggleButton, setShowToggleButton] = useState(false);
 
   useEffect(() => {
     const changeColor = () => {

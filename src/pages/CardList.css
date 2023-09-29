@@ -1,0 +1,41 @@
+/* Styles pour les cartes */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px; /* Espacement négatif pour contrer la marge par défaut du conteneur */
+}
+
+.cardContainer {
+  flex-basis: calc(
+    33.333% - 30px
+  ); /* Largeur de chaque carte (3 cartes par ligne) */
+  margin: 15px; /* Espacement entre les cartes */
+  box-sizing: border-box; /* Inclure la marge dans la largeur */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+/* Styles pour les médias queries */
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    flex-basis: calc(
+      50% - 30px
+    ); /* 2 cartes par ligne pour les écrans plus petits */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardContainer {
+    flex-basis: 100%; /* 1 carte par ligne pour les écrans très petits (mobile) */
+  }
+}

@@ -32,7 +32,7 @@ export default function Profil() {
           </p>
         </div>
       </div>
-      <div className="profilContainer">
+      <div className="transitionContainer">
         <div className="textImage">
           <h3>Actuellement</h3>
           <h4>En recherche de projet</h4>

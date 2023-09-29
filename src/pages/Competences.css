@@ -35,21 +35,30 @@
   margin: 15px auto;
 }
 
-.backendIcons {
+.backendIcons,
+.frontendIcons {
   /* border: 1px solid red; */
   border-top: 2px solid grey;
   margin: 5px 10px;
 }
 
-.frontendIcons {
-  /* border: 1px solid blue; */
-  border-top: 2px solid grey;
-  margin: 5px 10px;
+.cvImage {
+  cursor: default;
 }
 
-/* .backendIcon,
-.frontendIcon {
-  border-bottom: 1px solid #000;
-  width: 80%;
-  margin: 10px auto;
-} */
+.cvContenair {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: red;
+}
+
+.btnCv {
+  margin: 15px auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .competenceContainer {
+    display: ;
+  }
+}
