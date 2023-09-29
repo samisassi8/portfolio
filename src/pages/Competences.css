@@ -9,15 +9,15 @@
 }
 
 .competences p {
-  margin: 15px 10px;
+  margin: 20px 20px;
   text-align: justify;
 }
 
-.competencesH3 {
+#competencesH3 {
   margin: 1.5em;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .competenceContainer {
@@ -37,9 +37,9 @@
 
 .backendIcons,
 .frontendIcons {
-  /* border: 1px solid red; */
   border-top: 2px solid grey;
-  margin: 5px 10px;
+  margin: 10px 15px 10px;
+  padding-top: 10px;
 }
 
 .cvImage {
