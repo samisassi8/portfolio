@@ -58,7 +58,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .competenceContainer {
-    display: ;
+  .competences p {
+    width: 60%;
+    text-align: justify;
+    margin: 5% auto;
   }
+}
+
+@media screen and (max-width: 1440px){
+  
 }

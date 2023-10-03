@@ -10,7 +10,7 @@ export default function Profil() {
         <img src={profil} alt="" className="profil_picture" />
         <div className="description">
           <p>
-            Je suis un développeur Web passionné qui a débuté ma carrière en
+            Je suis un développeur Web passionné qui a débuté sa carrière en
             tant que commercial et entrepreneur dans le secteur de la rénovation
             immobilière.
           </p>

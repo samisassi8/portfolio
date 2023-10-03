@@ -11,7 +11,7 @@ import { Fade, Flip } from "react-awesome-reveal";
 
 export default function Competences() {
   return (
-    <div id="#Competences" className="competences">
+    <div id="Competences" className="competences">
       <h2>Competences</h2>
       <p>
         Elles sont en constantes améliorations car je suis toujours à la

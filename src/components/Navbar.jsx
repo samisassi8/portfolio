@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   function isMobile() {
-    return window.innerWidth < 768; // Vérifie si la largeur de la fenêtre est inférieure à 768px
+    return window.innerWidth < 768;
   }
 
   return (
@@ -56,7 +56,7 @@ export default function Navbar() {
         <img
           className="button-icon"
           src={showMenu ? close : hamburger}
-          alt={showMenu ? "hide menu" : "show menu"}
+          alt={showMenu ? "show menu" : "hide menu"}
         />
       </button>
       <div className={color ? "navbar navbar-bg" : "header"}>
