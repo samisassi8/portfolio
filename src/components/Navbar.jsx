@@ -3,7 +3,6 @@ import { Link as RouterLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import hamburger from "../assets/hamburger.svg";
 import close from "../assets/close.svg";
-// import logo from "../assets/logo.svg";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -34,7 +33,7 @@ export default function Navbar() {
   }, [color]);
 
   const closeMenu = () => {
-    setShowMenu(false);
+    if (showMenu) setShowMenu(false);
   };
 
   function isMobile() {

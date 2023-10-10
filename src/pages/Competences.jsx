@@ -7,7 +7,7 @@ import css from "../assets/css.png";
 import react from "../assets/react.svg";
 import cv from "../assets/cv.jpg";
 import cvDownload from "../assets/cv .pdf";
-import { Fade, Flip } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Competences() {
   return (

@@ -57,6 +57,52 @@
   margin: 15px auto;
 }
 
+@media screen and (max-width: 768px) {
+  .competenceContainer {
+    flex-direction: column;
+  }
+
+  .backendIcons,
+  .frontendIcons {
+    margin: 10px 0; /* Ajuste la marge */
+    padding-top: 10px; /* Ajoute une marge supérieure */
+    padding-bottom: 10px; /* Ajoute une marge inférieure */
+    max-height: 120px; /* Ajoute une hauteur maximale */
+    overflow: hidden; /* Cache le contenu qui dépasse la hauteur maximale */
+    display: flex;
+    justify-content: space-evenly; /* Répartit l'espace entre les icônes */
+  }
+
+  .competencesIcons {
+    width: 100px;
+    margin: 10px auto;
+    padding-top: 10px; /* Ajoute une marge supérieure */
+    padding-bottom: 10px; /* Ajoute une marge inférieure */
+    max-height: 120px; /* Ajoute une hauteur maximale */
+    overflow: hidden; /* Cache le contenu qui dépasse la hauteur maximale */
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .competencesIcons {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .competencesIcons img[src*="db.png"],
+  .competencesIcons img[src*="react.svg"] {
+    width: 80px; /* Ajuste la largeur de l'icône de la base de données */
+  }
+
+  .backendIcons,
+  .frontendIcons {
+    display: flex;
+    margin: 10px auto;
+    padding-top: 0;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .competences p {
     width: 60%;
@@ -65,6 +111,5 @@
   }
 }
 
-@media screen and (max-width: 1440px){
-  
-}
+/* @media screen and (max-width: 1440px) {
+} */
