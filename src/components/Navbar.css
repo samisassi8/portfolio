@@ -85,7 +85,7 @@ a {
 }
 
 .menu.hidden {
-  display: none;
+  display: flex;
 }
 
 .menu.flex {
@@ -94,6 +94,9 @@ a {
 
 /* Affiche le bouton de menu pour les tablettes et les mobiles */
 @media screen and (max-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
@@ -105,7 +108,7 @@ a {
     color: black;
   }
   .toggle-button {
-    display: block;
+    display: none;
     margin: 1rem auto;
   }
 
@@ -124,12 +127,11 @@ a {
     z-index: 2;
   }
 
-  ul.menu.flex {
+  /* ul.menu.flex {
     /* margin-top: 55px; */
-  }
 
-  navbar li a {
-    color: black;
+  */ .navbar li a {
+    color: white;
   }
 
   .menu.hidden {

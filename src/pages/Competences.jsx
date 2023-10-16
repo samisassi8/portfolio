@@ -4,19 +4,19 @@ import sql from "../assets/sql.png";
 import db from "../assets/db.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
-import react from "../assets/react.svg";
+import react from "../assets/react.png";
 import cv from "../assets/cv.jpg";
 import cvDownload from "../assets/cv .pdf";
 import { Fade } from "react-awesome-reveal";
 
 export default function Competences() {
   return (
-    <div id="Competences" className="competences">
+    <div id="Competences" className="competences"> 
       <h2>Competences</h2>
       <p>
         Elles sont en constantes améliorations car je suis toujours à la
         recherche de nouvelles compétences. Le développement est pour moi la
-        meilleure manière de toujours se surpasser afin d`assouvir ma passion .
+        meilleure manière de toujours me surpasser afin d'assouvir ma passion.
       </p>
       <div className="competenceContainer">
         <h3 id="competencesH3">back-end</h3>
