@@ -63,37 +63,34 @@
   margin: 15px auto;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 768px) {
   .competenceContainer {
     flex-direction: column;
   }
 
-  /* .backendIcons,
-  .frontendIcons {
-    margin: 10px 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-height: 120px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-  } */
-
   .backendIcons,
   .frontendIcons {
-    width: 60%;
+    width: 80%;
     display: flex;
     margin: 10px auto;
     padding-top: 0;
     justify-content: center;
   }
 
+  .frontendIcons .competencesIcons {
+    margin: auto 10px;
+  }
+
+  .backendIcons .competencesIcons {
+    margin: auto 10px;
+  }
+
   .competencesIcons {
     width: 70px;
     margin: 10px auto;
     padding: 10px;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
     max-height: 120px;
     overflow: hidden;
     display: flex;
@@ -105,9 +102,13 @@
     padding: 10px;
   }
 
+  .competencesIcons img[src*="sql.png"] {
+    margin: auto 0;
+  }
+
   .competencesIcons img[src*="db.png"],
   .competencesIcons img[src*="react.png"] {
-    width: 80px; /* Ajuste la largeur de l'icône de la base de données */
+    width: 80px;
   }
 }
 
