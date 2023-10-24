@@ -1,33 +1,73 @@
-import cardData from "../data/cardData"; // Importez les données de cardData.js
-import "./CardList.css";
+import React from "react";
+import {
+  Grid,
+  Card,
+  CardContent,
+  Typography,
+  CardActions,
+} from "@mui/material";
+import Container from "@mui/material/Container";
+import Data from "../Data.json";
+import { CardActionArea } from "@mui/material";
+import CardMedia from "@mui/material/CardMedia";
 
-const Card = ({ project }) => {
+export default function test() {
   return (
-    <div className="cardContainer">
-      <div className="row">
-        <div className="card">
-          <a href={project.url}>
-            <img src={`/images/${project.id}.jpg`} alt={project.title} />
-          </a>
-          <div className="card-content">
-            <h2>{project.title}</h2>
-            <p>Langages : {project.langages}</p>
-            <p>{project.description}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <Container maxWidth="lg">
+        <Typography variant="h4" align="center" style={{ marginTop: "50px" }}>
+          Portfolio
+        </Typography>
+        <Grid container spacing={5} style={{ marginTop: "20px" }}>
+          {Data.map((result, index) => (
+            <Grid item xs={12} sm={4} ms={4} key={index}>
+              <Card
+                sx={{ maxWidth: 345 }}
+                style={{
+                  padding: "10px",
+                  marginBottom: "30px",
+                  boxShadow:
+                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+                }}
+              >
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={result.img}
+                    alt={result.alt}
+                    style={{
+                      borderRadius: "5px",
+                    }}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {result.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {result.des}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <a href={result.url}>
+                    <button
+                      className="btn"
+                      style={{
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        transform: "scale(1.2)",
+                      }}
+                    >
+                      Visit me
+                    </button>
+                  </a>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
-};
-
-const CardList = () => {
-  return (
-    <div className="card-list">
-      {cardData.map((project) => (
-        <Card key={project.id} project={project} />
-      ))}
-    </div>
-  );
-};
-
-export default CardList;
+}

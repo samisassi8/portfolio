@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Profil from "./pages/Profil";
 import Competences from "./pages/Competences";
-// import Card from "./pages/CardList";
-import Contact from "./pages/Contact";
+import Card from "./pages/CardList";
+// import Contact from "./pages/Contact";
 
 export default App;
 
@@ -17,8 +17,8 @@ function App() {
       <Home />
       <Profil id="profil" />
       <Competences id="Competences" />
-      {/* <Card /> */}
-      <Contact />
+      <Card />
+      {/* <Contact /> */}
     </Router>
   );
 }
