@@ -98,6 +98,7 @@ img {
     width: 50%;
     display: inline-block;
     margin-bottom: 50px;
+    padding-right: 80px;
   }
   .profil_picture {
     width: 40%;
@@ -105,10 +106,7 @@ img {
     object-fit: cover;
     shape-outside: margin-box;
     clip-path: ellipse(33% 50%);
-    margin: 0 0px 5px 0;
-    /* display: inline-block; */
-    /* padding: 30px; */
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
+    margin: 0 0px 50px 0;
   }
 
   img .serverImage {
