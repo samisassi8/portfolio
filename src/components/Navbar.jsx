@@ -101,21 +101,11 @@ export default function Navbar() {
           <li>
             <Link
               smooth
-              to="/#Portfolio"
+              to="/#CardList"
               className="menu-item"
               onClick={isMobile() ? closeMenu : undefined}
             >
               Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link
-              smooth
-              to="/#Contact"
-              className="menu-item"
-              onClick={isMobile() ? closeMenu : undefined}
-            >
-              Contact
             </Link>
           </li>
         </ul>

@@ -7,8 +7,8 @@ export default function Profil() {
     <div className="profilContainer" id="Profil">
       <h2>A PROPOS DE MOI</h2>
       <div className="container">
-        <img src={profil} alt="" className="profil_picture" />
         <div className="description">
+          <img src={profil} alt="" className="profil_picture" />
           <p>
             Je suis un développeur Web passionné qui a débuté sa carrière en
             tant que commercial et entrepreneur dans le secteur de la rénovation

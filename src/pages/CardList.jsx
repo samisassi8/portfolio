@@ -14,7 +14,7 @@ import CardMedia from "@mui/material/CardMedia";
 export default function test() {
   return (
     <>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" id="CardList">
         <Typography variant="h4" align="center" style={{ marginTop: "50px" }}>
           Portfolio
         </Typography>
@@ -49,13 +49,17 @@ export default function test() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <a href={result.url}>
+                <CardActions
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <a
+                    href={result.url}
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                  >
                     <button
                       className="btn"
                       style={{
-                        justifyContent: "center",
-                        margin: "0 auto",
                         transform: "scale(1.2)",
                       }}
                     >

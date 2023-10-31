@@ -16,7 +16,7 @@
 #competencesH3 {
   margin: 1.5em;
   width: 80%;
-  margin: 15px auto 5px;
+  margin: 10px auto 5px;
 }
 
 .competenceContainer {
@@ -27,38 +27,35 @@
 }
 
 .competencesIcons {
-  width: 70%;
-  display: flex;
+  /* width: 70%;
+  margin: 15px auto; */
+  width: 80px;
   margin: 15px auto;
-}
-
-.competencesIcons
-  img[src*="nodejs.svg"]
-  .competencesIcons
-  img[src*="react.png"] {
-  display: flex;
-  width: 70%;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .backendIcons,
 .frontendIcons {
   display: flex;
+  align-items: center;
+  justify-content: space-around; /* Ajout pour centrer horizontalement */
   border-top: 2px solid grey;
   margin: 10px 15px 10px;
   padding-top: 10px;
 }
 
-.cvImage {
-  cursor: default;
+.nodeIcon {
+  margin: 0 15px;
 }
 
-.cvContenair {
+.cvImage {
+  cursor: default;
+  width: 100%;
+}
+
+.cvContainer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-color: red;
+  height: auto;
 }
 
 .btnCv {
@@ -67,7 +64,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   .competenceContainer {
     flex-direction: column;
   }
@@ -75,15 +72,11 @@
   .backendIcons,
   .frontendIcons {
     width: 80%;
-    display: flex;
     margin: 10px auto;
     padding-top: 0;
-    justify-content: center;
-  }
-
-  .frontendIcons .competencesIcons,
-  .backendIcons .competencesIcons {
-    margin: auto;
+    display: flex;
+    flex-direction: column; /* Changement pour aligner verticalement sur mobile */
+    align-items: center; /* Ajout pour centrer verticalement sur mobile */
   }
 
   .competencesIcons {
@@ -97,21 +90,14 @@
     align-items: center;
   }
 
-  .competencesIcons {
-    width: 70%;
-    padding: 10px 0 10px;
-  }
-
   .competencesIcons img {
     flex: 1;
     width: auto;
     max-width: 80px;
+    width: auto;
   }
 
   .competencesIcons img[src*="sql.png"] {
-    /* flex: 1;
-    width: auto;
-    max-width: 80px; */
     margin: 0;
   }
 
@@ -119,9 +105,7 @@
   .competencesIcons img[src*="react.png"] {
     width: 80px;
   }
-}
 
-@media screen and (max-width: 1024px) {
   .competences p {
     width: 60%;
     text-align: justify;

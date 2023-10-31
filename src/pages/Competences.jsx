@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Competences() {
   return (
-    <div id="Competences" className="competences"> 
+    <div id="Competences" className="competences">
       <h2>Competences</h2>
       <p>
         Elles sont en constantes améliorations car je suis toujours à la
@@ -24,7 +24,11 @@ export default function Competences() {
           <Fade cascade>
             <img src={sql} alt="sql icon" className="competencesIcons" />
             <img src={db} alt="db icon" className="competencesIcons" />
-            <img src={node} alt="node icon" className="competencesIcons" />
+            <img
+              src={node}
+              alt="node icon"
+              className="competencesIcons nodeIcon"
+            />
           </Fade>
         </div>
         <h3 id="competencesH3">front-end</h3>

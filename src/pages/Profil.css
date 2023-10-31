@@ -58,8 +58,16 @@ img {
   text-align: center;
 }
 
+.profil_picture {
+  width: 40%;
+  float: left;
+  /* object-fit: cover; */
+  margin: 0 11px -2px 0;
+}
+
 @media screen and (min-width: 768px) {
   .profilContainer {
+    position: relative;
     width: 100vw;
     flex-direction: row;
     justify-content: center;
@@ -95,18 +103,20 @@ img {
   }
   .description {
     text-align: justify;
-    width: 50%;
+    width: 80%;
     display: inline-block;
-    margin-bottom: 50px;
-    padding-right: 80px;
+    margin: 0 auto 50px;
+    /* padding-right: 80px; */
   }
   .profil_picture {
     width: 40%;
     float: left;
+    top: 50px;
     object-fit: cover;
     shape-outside: margin-box;
-    clip-path: ellipse(33% 50%);
-    margin: 0 0px 50px 0;
+    /* clip-path: circle(50% at 50% 50%); */
+    border-radius: 50%;
+    margin: 10px 10px 10px 0;
   }
 
   img .serverImage {
@@ -118,6 +128,29 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* padding: 15px; */
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .profil_picture {
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 20px 5px 0;
+  }
+
+  .description p {
+    margin: 20px;
+  }
+
   .transitionContainer {
     max-width: 80vw;
     margin: 0 auto;
