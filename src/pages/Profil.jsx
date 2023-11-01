@@ -25,7 +25,7 @@ export default function Profil() {
             communication, que j'utilise pour créer des solutions Web innovantes
             et répondre aux besoins des clients.
           </p>
-          <p>J'ai donc suivi des formations pour devenir developpeur web</p>
+          <p>J'ai donc suivi des formations pour devenir developpeur web.</p>
           <p>
             Mon objectif est de contribuer à des projets Web stimulants et de
             continuer à grandir en tant que développeur Web.
