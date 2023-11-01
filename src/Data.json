@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Slider",
     "des": "creation d'un slider responsive réutilisable en React.",
-    "img": "../public/images/1.jpg",
+    "img": "https://samisassi8.github.io/portfolio/images/1.jpg",
     "alt": "slider image project",
     "url": "https://samisassi8.github.io/slider/"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "CountryData",
     "des": "Application en react avec appel d'API pour évaluer ses connaissances en géographie.",
-    "img": "../public/images/2.jpg",
+    "img": "https://samisassi8.github.io/portfolio/images/2.jpg",
     "alt": "countrydata image project",
     "url": "https://samisassi8.github.io/countryData/"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Weather",
     "des": "Application en react pour savoir comment s'habiller.",
-    "img": "../public/images/3.jpg",
+    "img": "https://samisassi8.github.io/portfolio/images/3.jpg",
     "alt": "weather image project",
     "url": "https://samisassi8.github.io/weather/"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "Infinity scroll",
     "des": "Application react responsive avec appel de l'API unsplash.",
-    "img": "../public/images/4.jpg",
+    "img": "https://samisassi8.github.io/portfolio/images/4.jpg",
     "alt": "infinityscroll image project",
     "url": "https://samisassi8.github.io/infinityScroll/"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "e commerce",
     "des": "Application react reponsive de card pour un site e commerce",
-    "img": "../public/images/5.jpg",
+    "img": "https://samisassi8.github.io/portfolio/images/5.jpg",
     "alt": "e commerce image project",
     "url": "https://samisassi8.github.io/eCommerce/"
   }

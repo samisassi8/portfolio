@@ -1,8 +1,6 @@
 /* Navbar */
 .navbar {
   position: fixed;
-  /* margin-top: 90px !important; */
-  /* height: 90px; */
   top: 0;
   width: 100%;
   display: flex;
@@ -19,7 +17,6 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* logo */
 .logo {
   width: 80px;
   position: absolute;
@@ -32,16 +29,11 @@ a {
   color: white;
 }
 
-/* Menu */
 .menu {
-  /* position: absolute; */
   height: 60px;
   top: 100%;
   width: 100%;
-  /* background-color: rgb(226 232 240); */
-  /* margin-top: 2em; */
   padding-bottom: 5px;
-  /* padding-top: 1.4em; */
   display: flex;
   z-index: 2;
 }
@@ -52,7 +44,6 @@ a {
   justify-content: center;
 }
 
-/* Menu Items */
 .menu-item {
   display: inline-block;
   padding: 2px 16px;
@@ -66,12 +57,10 @@ a {
   display: none;
 }
 
-/* Button Icon */
 .button-icon {
   width: 1rem;
 }
 
-/* Show/Hide Menu Styles */
 .toggle-button .button-icon[src*="close"] {
   display: block;
 }
@@ -92,7 +81,6 @@ a {
   display: flex;
 }
 
-/* Affiche le bouton de menu pour les tablettes et les mobiles */
 @media screen and (max-width: 768px) {
   .toggle-button {
     display: none;
@@ -119,7 +107,6 @@ a {
   }
 
   .menu.flex {
-    /* margin-top: 50px; */
     background-color: rgba(0, 0, 0, 0.9);
     flex-direction: column;
     display: flex;
@@ -127,10 +114,7 @@ a {
     z-index: 2;
   }
 
-  /* ul.menu.flex {
-    /* margin-top: 55px; */
-
-  */ .navbar li a {
+  .navbar li a {
     color: white;
   }
 
