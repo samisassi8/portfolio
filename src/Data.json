@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Slider",
-    "des": "react responsive auto slider",
+    "des": "creation d'un slider responsive réutilisable en React.",
     "img": "../public/images/1.jpg",
     "alt": "slider image project",
     "url": "https://samisassi8.github.io/slider/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "CountryData",
-    "des": "react responsive country data app with API",
+    "des": "Application en react avec appel d'API pour évaluer ses connaissances en géographie.",
     "img": "../public/images/2.jpg",
     "alt": "countrydata image project",
     "url": "https://samisassi8.github.io/countryData/"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Weather",
-    "des": "react responsive weather with API",
+    "des": "Application en react pour savoir comment s'habiller.",
     "img": "../public/images/3.jpg",
     "alt": "weather image project",
     "url": "https://samisassi8.github.io/weather/"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Infinity scroll",
-    "des": "react responsive infinity scroll whit unsplash's API",
+    "des": "Application react responsive avec appel de l'API unsplash.",
     "img": "../public/images/4.jpg",
     "alt": "infinityscroll image project",
     "url": "https://samisassi8.github.io/infinityScroll/"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "e commerce",
-    "des": "react responsive e commerce app",
+    "des": "Application react reponsive de card pour un site e commerce",
     "img": "../public/images/5.jpg",
     "alt": "e commerce image project",
     "url": "https://samisassi8.github.io/eCommerce/"
