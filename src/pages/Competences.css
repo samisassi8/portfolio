@@ -111,16 +111,20 @@
   .competences p {
     width: 60%;
     text-align: justify;
-    margin: 5% auto;
+    margin: 3% auto;
   }
 }
 @media screen and (min-width: 1024px) {
+  .presentation p {
+    max-width: 500px;
+    margin: 30px auto 120px;
+  }
   .presentation {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .fullCompetences {
@@ -135,5 +139,8 @@
     flex: 1;
     min-width: 40%;
     margin: 0 25px;
+  }
+  .cvImage {
+    max-width: 60%;
   }
 }
