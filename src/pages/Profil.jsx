@@ -10,32 +10,29 @@ export default function Profil() {
         <div className="description">
           <img src={profil} alt="" className="profil_picture" />
           <p>
-            Je suis un développeur Web passionné qui a débuté sa carrière en
-            tant que commercial et entrepreneur dans le secteur de la rénovation
-            immobilière.
+            Gestionnaire immobilier aguerri avec plus de 10 ans d'expérience ,
+            avec un taux d'occupation de 100% et un chiffre d'affaires annuel en
+            progression constante.
           </p>
-          <p>
-            Après avoir dirigé avec succès des entreprises et supervisé la
-            rénovation de plusieurs propriétés, j'ai entamé une transition de
-            carrière vers le monde du développement Web.
-          </p>
-          <p>
-            Mon parcours entrepreneurial m'a permis de développer des
-            compétences en gestion de projet, en résolution de problèmes et en
-            communication, que j'utilise pour créer des solutions Web innovantes
-            et répondre aux besoins des clients.
-          </p>
-          <p>J'ai donc suivi des formations pour devenir developpeur web.</p>
-          <p>
-            Mon objectif est de contribuer à des projets Web stimulants et de
-            continuer à grandir en tant que développeur Web.
-          </p>
+          <p>Compétences clés :</p>
+          <ul>
+            <li>Prospection et sélection des locataires</li>
+            <li>Edition des baux</li>
+            <li>Perception des loyers</li>
+            <li>Entretien et réparations</li>
+            <li>Comptabilité et finances</li>
+            <li>Suivi des réglementations</li>
+            <li>Gestion d'équipes</li>
+            <li>Communication efficace</li>
+            <li>Résolution de problèmes</li>
+            <li>Compétences informatiques</li>
+          </ul>
         </div>
       </div>
       <div className="transitionContainer">
         <div className="textImage">
           <h3>Actuellement</h3>
-          <h4>En recherche de projet</h4>
+          <h4>En recherche de challenge</h4>
         </div>
         <img src={serverImage} alt="server image" className="serverImage" />
       </div>

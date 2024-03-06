@@ -130,10 +130,9 @@
     justify-content: space-between;
   }
 
-  .competenceContainer,
   .cvContainer {
     flex: 1;
-    min-width: 40%;
-    margin: 0 25px;
+    max-width: 40%;
+    margin: 0 auto;
   }
 }

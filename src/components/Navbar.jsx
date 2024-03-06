@@ -99,14 +99,14 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
+            {/* <Link
               smooth
               to="/#CardList"
               className="menu-item"
               onClick={isMobile() ? closeMenu : undefined}
             >
               Portfolio
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </div>

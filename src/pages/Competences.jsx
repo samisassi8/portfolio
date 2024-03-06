@@ -1,27 +1,20 @@
 import "./Competences.css";
-import node from "../assets/nodejs.png";
-import sql from "../assets/sql.png";
-import db from "../assets/db.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import react from "../assets/react.png";
 import cv from "../assets/cv.jpg";
 import cvDownload from "../assets/cv .pdf";
-import { Fade } from "react-awesome-reveal";
 
 export default function Competences() {
   return (
     <div id="Competences" className="competences">
       <div className="presentation">
-        <h2>Competences</h2>
-        <p>
+        <h2>CV</h2>
+        {/* <p>
           Elles sont en constantes améliorations car je suis toujours à la
           recherche de nouvelles compétences. Le développement est pour moi la
           meilleure manière de toujours me surpasser afin d'assouvir ma passion.
-        </p>
+        </p> */}
       </div>
       <div className="fullCompetences">
-        <div className="competenceContainer">
+        {/* <div className="competenceContainer">
           <h3 id="competencesH3">back-end</h3>
           <div className="backendIcons">
             <Fade cascade>
@@ -42,7 +35,7 @@ export default function Competences() {
               <img src={react} alt="react icon" className="competencesIcons" />
             </Fade>
           </div>
-        </div>
+        </div> */}
         <div className="cvContainer">
           <img src={cv} alt="cv image" className="cvImage" />
           <a

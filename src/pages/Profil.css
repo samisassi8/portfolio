@@ -65,6 +65,15 @@ img {
   margin: 0 11px -2px 0;
 }
 
+ul {
+  display: block;
+  list-style-type: disc;
+}
+
+h4 {
+  margin: auto 15px;
+}
+
 @media screen and (min-width: 768px) {
   .profilContainer {
     position: relative;
@@ -128,6 +137,9 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .serverImage {
+    max-width: 944px;
+  }
   .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -158,8 +170,8 @@ img {
   }
   .textImage {
     position: absolute;
-    left: 50%;
-    top: 20%;
+    left: 40%;
+    top: 5%;
   }
   h2 p {
     text-align: justify;
