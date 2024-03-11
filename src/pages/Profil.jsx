@@ -33,10 +33,6 @@ export default function Profil() {
         </div>
       </div>
       <div className="transitionContainer">
-        <div className="textImage">
-          <h3>Actuellement</h3>
-          <h4>En recherche de projet</h4>
-        </div>
         <img src={serverImage} alt="server image" className="serverImage" />
       </div>
     </div>
