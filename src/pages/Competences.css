@@ -141,6 +141,7 @@
     margin: 0 25px;
   }
   .cvImage {
+    margin: 0 auto;
     max-width: 60%;
   }
 }
